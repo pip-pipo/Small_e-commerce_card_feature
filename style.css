@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: rgb(13, 44, 102);
+    color: #fff;
+}
+
+img:hover{
+    transform: scale(1.30);
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+.card{
+    transition: 400ms linear all ;
+    overflow: hidden;
+    max-width: 278px;
+    padding:15px;
+    box-shadow: 1px 1px 5px 1px rgb(255, 255, 255);
+}
+
+.price{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: #000;
+    max-width: 278px;
+    
+}
+
+.addToCard > button{
+    background:transparent;
+    color:inherit;
+
+}
+
+@media screen and (max-width:900px){
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        place-items: center;
+    }
+    .card{
+        max-width: 278px;
+        padding:15px;
+        box-shadow: 1px 1px 5px 1px rgb(255, 255, 255);
+    }
+    .price{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background: #000;
+        max-width: 258px;
+        
+    }
+    
+    .addToCard > button{
+        background:transparent;
+        color:inherit;
+        border: none;
+        outline: 1px solid rgb(15, 131, 125);
+    }
+}
+
+@media screen and (max-width:768px){
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr ;
+        place-items: center;
+    }
+    .card{
+        max-width: 278px;
+        padding:15px;
+        box-shadow: 1px 1px 5px 1px rgb(255, 255, 255);
+    }
+    .price{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background: #000;
+        max-width: 258px;
+        
+    }
+    
+    .addToCard > button{
+        background:transparent;
+        color:inherit;
+        border: none;
+        outline: 1px solid rgb(15, 131, 125);
+    }
+}
